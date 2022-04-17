@@ -85,8 +85,8 @@ To view all of the branches that you have in your repository, use the `git branc
 ### Viewing differences: 
 Use the `git diff` command to see the differences between your branches. 
 ### Viewing changed files:
-se the `git status` command to view your changed files.
-### Remember:
+Use the `git status` command to view your changed files.
+Remember:
   1) Use `git add <file-name>` command for all the files that you want to commit. 
   2) Use `git status` command to check which files you have selected to commit. 
   3) Use `git commit -m "description of what the commit does"` command to commit the files.
