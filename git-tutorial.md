@@ -65,39 +65,39 @@ Now, we want to commit the files.
 
 # Branches
 Typically, we work on **branches** seperate versions of your main branch. Creating a branch allows you to work on copies of the files without affecting the original ones. This is particularly useful when working with others. This way, multiple people can work on separate branches on separate tasks. The main or master brnach is where final changes are merged. 
-  1) Creating a branch:
-        - Use the `git branch <name-of-branch>` command. Do not use underscores when naming your branch.
+### Creating a branch:
+Use the `git branch <name-of-branch>` command. Do not use underscores when naming your branch.
           ```
           git branch <exciting>
           ```
-  2) Viewing all branches:
-        - To view all of the branches that you have in your repository, use the `git branch` command.
-  3) Switching branches:
-        - We are currently in the main branch. Let's switch to the exciting branch. Use the `git checkout <name-of-branch>` command.
+### Viewing all branches:
+To view all of the branches that you have in your repository, use the `git branch` command.
+### Switching branches:
+  1) We are currently in the main branch. Let's switch to the exciting branch. Use the `git checkout <name-of-branch>` command.
           ```
           git checkout exciting
           ```
-         - Let's add a new file to our exciting branch. Open your IDE and create a new file named exciting with the following content:
+  2) Let's add a new file to our exciting branch. Open your IDE and create a new file named exciting with the following content:
           ```
           It's very exciting to learn for to use GITHUB!
           ```
-         - Save, stage, and commit this file, just as we've learned in the previous section.
-  4) Viewing differences: 
-        - Use the `git diff` command to see the differences between your branches. 
-  5) Viewing changed files:
-        - Use the `git status` command to view your changed files.
-  6) Remember:
-        - Use `git add <file-name>` command for all the files that you want to commit. 
-        - Use `git status` command to check which files you have selected to commit. 
-        - use `git commit -m "description of what the commit does"` command to commit the files.
-  7) Adding changes to main branch:
-        - Finally, when you're ready to add the changes you have made into the main branch, use the `git checkout <default-branch>` command to switch to the main branch. Then, use the `git merge <feature-branch>` command to **merge**.
+  3) Save, stage, and commit this file, just as we've learned in the previous section.
+### Viewing differences: 
+Use the `git diff` command to see the differences between your branches. 
+### Viewing changed files:
+se the `git status` command to view your changed files.
+### Remember:
+  1) Use `git add <file-name>` command for all the files that you want to commit. 
+  2) Use `git status` command to check which files you have selected to commit. 
+  3) Use `git commit -m "description of what the commit does"` command to commit the files.
+### Adding changes to main branch:
+Finally, when you're ready to add the changes you have made into the main branch, use the `git checkout <default-branch>` command to switch to the main branch. Then, use the `git merge <feature-branch>` command to **merge**.
 # Stash
   1) You use **stashes** when you want to save your changes without having to commit just yet, using the git stash` command.
   2) To reapply your stashed changes type `git stash pop`
   3) To view stash differences, type `git stash show`
   4) Clear your stash with `git clear stash`
-  5) Let's say you want to add a file name introduction to your new-folder-name repository, but it's incomplete for whatever reason and you don't want to commit it.
+  5) Let's say you want to add a file name to your new-folder-name repository, but it's incomplete for whatever reason and you want to be able to come back to it.
   6) Save your file and add it using the `git add` command.
   7) Use the `git stash` command to temporarilty store your file to work on later. 
   8) Note: Files that are not being tracked cannot be stashed, so you must add your file before stashing it.
